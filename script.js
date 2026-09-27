@@ -17,6 +17,11 @@
     });
   }
 
+  /* 1b) Randevu: telefonda doğrudan arama, bilgisayarda iletişim sayfası */
+  if (window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+    document.querySelectorAll('a[data-tel]').forEach(function (a) { a.setAttribute('href', a.getAttribute('data-tel')); });
+  }
+
   /* 2) Mobil menü */
   var header = document.querySelector('.site-header');
   var btn = document.querySelector('.menu-btn');
