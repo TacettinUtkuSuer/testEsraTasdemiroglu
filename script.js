@@ -8,7 +8,7 @@
         Sunucuda (GitHub Pages) /hakkimda -> hakkimda.html zaten çalışır;
         bu sadece bilgisayarda çift tıklayıp açınca klasör listesine düşmeyi önler. */
   if (location.protocol === 'file:') {
-    var map = { '/': 'index.html', '/hakkimda': 'hakkimda.html', '/teknikler': 'teknikler.html', '/iletisim': 'iletisim.html' };
+    var map = { '/': 'index.html', '/hakkimda': 'hakkimda.html', '/teknikler': 'teknikler.html', '/iletisim': 'iletisim.html', '/blog': 'blog.html', '/blog/kaygi-ile-basa-cikma': 'blog/kaygi-ile-basa-cikma.html', '/blog/cift-terapisi-ne-zaman-gerekir': 'blog/cift-terapisi-ne-zaman-gerekir.html', '/blog/bosanma-surecinde-psikolojik-destek': 'blog/bosanma-surecinde-psikolojik-destek.html', '/blog/evlilik-oncesi-danismanlik': 'blog/evlilik-oncesi-danismanlik.html' };
     document.querySelectorAll('a[href^="/"]').forEach(function (a) {
       var raw = a.getAttribute('href');
       var parts = raw.split('#');
